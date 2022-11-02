@@ -327,7 +327,7 @@
                                     BARU MULAI
                                 </p>
                                 <h1 class="price text-center">
-                                    $140K
+                                    $120K
                                 </h1>
                                 <div class="item-benefit-pricing mb-4">
                                     <img src="{{asset('frontend/images/ic_check.svg')}}" alt="">
