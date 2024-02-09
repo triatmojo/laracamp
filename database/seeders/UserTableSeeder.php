@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-
 class UserTableSeeder extends Seeder
 {
     /**
@@ -17,6 +17,7 @@ class UserTableSeeder extends Seeder
             [
                 'name' => 'admin',
                 'email' => 'admin@gmail.com',
+                'email_verified_at' => date('Y-m-d H:i:s', time()),
                 'password' =>  Hash::make('admin123'),
                 'occupation' => 'System Engineer',
                 'is_admin' => '1',
@@ -26,6 +27,7 @@ class UserTableSeeder extends Seeder
             [
                 'name' => 'user',
                 'email' => 'user@gmail.com',
+                'email_verified_at' => date('Y-m-d H:i:s', time()),
                 'password' =>  Hash::make('user123'),
                 'occupation' => 'Product Manager',
                 'is_admin' => '0',
@@ -33,5 +35,7 @@ class UserTableSeeder extends Seeder
                 'updated_at' => date('Y-m-d H:i:s', time())
             ]
         ];
+
+        User::insert($users);
     }
 }
