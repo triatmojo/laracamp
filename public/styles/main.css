@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .pl-150 {
@@ -9,7 +9,6 @@ body {
 .copyright {
   padding: 70px 0 0 0;
 }
-
 .copyright p {
   text-align: center;
   font-weight: 400;
@@ -33,39 +32,32 @@ body {
   float: left;
   padding: 120px;
 }
-
 .login-user .right .people {
   margin-top: 100px;
   height: 170px;
 }
-
 .login-user .right .logo {
   height: 42px;
   margin-bottom: 100px;
 }
-
 .login-user .right .btn-border {
   border: 1px solid #E7E5F4;
   border-radius: 50px;
   padding: 12px 80px 12px 80px;
 }
-
 .login-user .right .btn-google-login {
   margin-top: 40px;
 }
-
 .login-user .right .btn-google-login .icon {
   margin-right: 8px;
 }
-
 .login-user .left {
   background-color: #4D1CAB;
   width: 50%;
-  min-height: 900px;
+  min-height: 1120px;
   text-align: center;
   float: left;
 }
-
 .login-user .left img {
   margin-top: 200px;
   height: 540px;
@@ -76,13 +68,11 @@ body {
   margin-top: 370px;
   padding: 70px 0 70px 0;
 }
-
 .testimonials .item-review {
   border-radius: 13px;
   background: #fff;
   padding: 20px;
 }
-
 .testimonials .item-review .message, .testimonials .item-review .user .info .role {
   font-size: 16px;
   font-weight: 400;
@@ -91,29 +81,24 @@ body {
   min-height: 90px;
   margin-top: 30px;
 }
-
 .testimonials .item-review .user {
   margin-top: 30px;
 }
-
 .testimonials .item-review .user .photo {
   width: 56px;
   height: 56px;
   float: left;
   margin-right: 16px;
 }
-
 .testimonials .item-review .user .info {
   padding-top: 5px;
 }
-
 .testimonials .item-review .user .info .name {
   color: #211B3D;
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 0;
 }
-
 .testimonials .item-review .user .info .role {
   min-height: 0;
   margin-top: 0;
@@ -126,11 +111,9 @@ body {
   padding-top: 70px;
   max-height: 620px;
 }
-
 .pricing .copywriting {
   margin-top: 80px;
 }
-
 .pricing .support {
   font-size: 16px;
   font-weight: 400;
@@ -138,43 +121,36 @@ body {
   line-height: 30px;
   margin-top: 30px;
 }
-
 .pricing .table-pricing {
   background: #fff;
   border-radius: 40px;
   padding: 30px;
   border: 1px solid #EAE8F5;
 }
-
 .pricing .table-pricing .price {
   font-size: 42px;
   font-weight: 600;
   color: #211B3D;
   margin-bottom: 20px;
 }
-
 .pricing .table-pricing .item-benefit-pricing img {
   float: left;
   margin-right: 8px;
   margin-top: 2px;
 }
-
 .pricing .table-pricing .item-benefit-pricing p {
   font-size: 16px;
   font-weight: 500;
   color: #211B3D;
 }
-
 .pricing .table-pricing .item-benefit-pricing .divider {
   height: 1px;
   width: 100%;
   background: #E7E5F4;
 }
-
 .pricing .paket-gila {
   min-height: 697px;
 }
-
 .pricing .paket-biasa {
   min-height: 453px;
 }
@@ -186,11 +162,9 @@ body {
 .steps .item-step .cover {
   height: 497px;
 }
-
 .steps .item-step .copywriting {
   padding-top: 100px;
 }
-
 .steps .item-step .support {
   font-size: 16px;
   font-weight: 400;
@@ -199,7 +173,7 @@ body {
   margin-top: 30px;
 }
 
-.btn-master, .btn-thirdty, .btn-primary, .btn-secondary {
+.btn-master, .btn-secondary, .btn-primary, .btn-thirdty {
   padding: 11px 36px 11px 36px;
   border-radius: 100px;
   border: 0;
@@ -215,7 +189,6 @@ body {
   background: #7839F3;
   color: #fff;
 }
-
 .btn-primary:hover {
   background: #31B380;
 }
@@ -235,19 +208,16 @@ body {
 .benefits {
   margin-bottom: 100px;
 }
-
 .benefits .item-benefit .icon {
   width: 56px;
   height: 56px;
   margin-bottom: 20px;
 }
-
 .benefits .item-benefit .title {
   font-size: 20px;
   color: #211B3D;
   font-weight: 500;
 }
-
 .benefits .item-benefit .support {
   font-size: 16px;
   font-weight: 400;
@@ -262,7 +232,6 @@ body {
 .header-wrap .primary-header {
   margin-top: 8px;
 }
-
 .header-wrap .story {
   margin-bottom: 0;
 }
@@ -283,33 +252,27 @@ body {
 .banner {
   padding: 80px 0 80px 0;
 }
-
 .banner .copywriting {
   padding-top: 80px;
 }
-
 .banner .header {
   margin: 20px 0 20px 0;
   font-size: 42px;
   color: #211B3D;
   font-weight: 600;
 }
-
 .banner .support {
   font-size: 16px;
   font-weight: 400;
   color: #5B5575;
   line-height: 30px;
 }
-
 .banner .cta {
   margin-top: 30px;
 }
-
 .banner .brands {
   margin-top: 60px;
 }
-
 .banner .brands img {
   height: 30px;
 }
@@ -328,18 +291,15 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
 .checkout .item-bootcamp .cover {
   height: 255px;
   margin-bottom: 30px;
 }
-
 .checkout .item-bootcamp .package {
   font-size: 22px;
   color: #31B380;
   font-weight: 600;
 }
-
 .checkout .item-bootcamp .description {
   font-size: 16px;
   color: #211B3D;
@@ -352,7 +312,7 @@ body {
 }
 
 .text-red {
-  color: #f73353 !important;
+  color: rgb(247, 51, 83) !important;
 }
 
 .navbar {
@@ -361,30 +321,24 @@ body {
   -moz-box-shadow: 1px 8px 61px 0px rgba(22, 28, 51, 0.08);
   padding: 24px 0 24px 0;
 }
-
 .navbar .user-logged a {
   color: #211B3D;
   text-decoration: none;
 }
-
 .navbar .user-logged .user-photo {
   width: 56px;
   height: 56px;
   margin-left: 10px;
 }
-
 .navbar .navbar-nav .nav-link {
   color: #211B3D;
   font-weight: 400;
   padding-left: 30px;
 }
-
 .navbar .navbar-nav .active {
   color: #7839F3 !important;
   font-weight: 500;
 }
-
 .navbar .navbar-brand img {
   height: 42px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
