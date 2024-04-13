@@ -4,9 +4,11 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\User\Checkout\Store;
 use App\Models\Checkout;
 use App\Models\Camp;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redis;
 
 class CheckoutController extends Controller
 {
@@ -21,8 +23,12 @@ class CheckoutController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create(Camp $camp)
-    {
+    public function create(Camp $camp, Request $request)
+    { 
+        if($camp->isRegistered) {
+            $request->session()->flash('error', "You already on {$camp->title} camp.");
+            return redirect()->route('dashboard');
+        }
         return view('checkout.create', [
             'camp' => $camp
         ]);
@@ -31,7 +37,7 @@ class CheckoutController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request, Camp $camp)
+    public function store(Store $request, Camp $camp)
     {
 
         $data = $request->all();
