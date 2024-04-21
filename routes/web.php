@@ -21,15 +21,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
-Route::get('checkout/{camp:slug}', [CheckoutController::class, 'create'])->name('checkout.create');
-Route::post('checkout/{camp}', [CheckoutController::class, 'store'])->name('checkout.store');
+// Route::get('success-checkout', function () {
+//     return view('success');
+// })->name('success-checkout');
 
-Route::get('success-checkout', function () {
-    return view('success');
-})->name('success-checkout');
-
-// socialite google
+// socialite route with google
 Route::get('sign-in-google', [UserController::class, 'google'])->name('user.login.google');
 Route::get('auth/google/callback', [UserController::class, 'handleProviderCallback'])->name('auth.google.callback');
 
@@ -46,6 +42,7 @@ Route::middleware('auth')->group(function () {
     
     // user dashboard
     Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+    Route::get('dashboard/checkout/invoice/{checkout}', [CheckoutController::class, 'invoice'])->name('user.checkout.invoice');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
